@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+	 <link rel="stylesheet" href="user.css">
+ </head>
+ <body onload="getUser()">
+ <div>
+<!-- 用户列表	 -->
+  <div class="usertitle">
+		<h3>用户列表</h3>
+	</div>
+	<hr>
+<!-- 页数和搜索 -->
+	<div class="re_sear">
+		<div>
+			<label for="records">每页显示记录数</label>
+			<select  class="records" id="records">
+				<option value="5">5</option>
+				<option value="10">10</option>
+				<option value="15">15</option>
+				<option value="20">20</option>
+				<option value="25">25</option>
+				<option value="30">30</option>
+			</select>	
+		</div>
+		<div class="usersearch">
+ 			<input id="ps" type="text" placeholder="请输入搜索手机号"> 
+			<a class="search" href="javascript:Search()"><svg t="1567695649149" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2084" width="32" height="32"><path d="M688.565345 653.900847c0 0-11.672854 15.440667-27.297716 30.575366l179.917696 176.300308 29.860075-27.91784L688.565345 653.900847 688.565345 653.900847zM752.457514 462.786135c0 175.017082-134.816498 306.400389-301.919331 306.400389C276.296767 766.655887 149.950174 629.448946 149.950174 463.021495c0-160.758334 135.995347-296.318776 300.588009-296.318776C617.641015 166.70272 752.457514 304.025295 752.457514 462.786135L752.457514 462.786135zM449.439152 206.867488c-143.231145 0-259.32421 116.181069-259.32421 261.075087 0 144.898111 116.093065 261.882476 259.32421 261.882476 143.250588 0 262.8495-116.984365 262.8495-261.882476C712.288652 323.048557 592.68974 206.867488 449.439152 206.867488L449.439152 206.867488zM449.439152 206.867488" p-id="2085" fill="#bfbfbf"></path></svg></a>
+		</div>
+	</div>
+<!-- 用户信息	 -->
+	<div class="userinfor">
+<!-- 用户表 -->
+		<table id="usertable">
+<!-- 标题 -->
+			<thead>
+				<tr>
+					<th class="all">
+						<label>
+							<input type="checkbox">全选
+						</label>
+					</th>
+					<th>编号</th>
+					<th>头像</th>
+					<th>用户名</th>
+					<th>手机号</th>
+					<th>操作</th>
+			</thead>
+<!-- 信息内容 -->
+			<tbody id="usertext">
+			</tbody>
+		</table>
+	</div>
+<!-- 页面转换 -->
+	<div class="page">
+		<ul>
+			<li class="pno_t">
+				<a href="javascript:;">上一页</a>
+			</li>
+			<li class="pno_n">
+				<a href="javascript:;">1</a>
+			</li>
+			<li class="pno_n">
+				<a href="javascript:;">2</a>
+			</li>
+			<li class="pno_n">
+				<a href="javascript:;">3</a>
+			</li>
+			<li class="pno_n">
+				<a href="javascript:;">4</a>
+			</li>
+			<li class="pno_n">
+				<a href="javascript:;">5</a>
+			</li>
+			<li class="pno_t">
+				<a href="javascript:;">下一页</a>
+			</li>
+		</ul>
+	</div>
+ </div>
+ <script src="ajax/userlist.js"></script>
+ </body>
+</html>

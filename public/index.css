@@ -1,0 +1,600 @@
+.float{
+    float:left;
+}
+a:hover{text-decoration: none;}
+/* 鼠标悬停图片缩小 */
+.changeBig{
+    transition: 1s;
+}
+.changeBig:hover{
+    transform: scale(.95);
+}
+/* 漫画名 */
+.carName{
+    font-size: 14px;
+    color:#333;
+    padding:4px 6px;
+    margin: 0;
+}
+.carName:hover{
+    color:#007FFF;
+}
+
+
+header{
+    width:100%;height:64px;
+    min-width: 1184px;
+    background:#000;
+}
+header>.hbody{
+    width:1184px;height:64px;
+    margin:0 auto;
+}
+header>.hbody a{
+    color:#aaa;
+    font-size:14px;
+}
+header>.hbody>.logo img{
+    width:64px;height:64px;
+}
+header>.hbody>.direc{
+    width:648px;height:32px;
+    margin:16px 0;
+    padding-left:45px;
+}
+header>.hbody>.search{
+    width:252px;
+    height:64px;
+    margin-left:50px;
+}
+header>.hbody>.search .form-control{
+    margin:14px 0;
+}
+header>.hbody .breadcrumb{
+    background-color: #000;
+    float:right;
+    margin:8px 0;
+}
+header>.hbody .breadcrumb-item + .breadcrumb-item::before{
+    content:"|";
+}
+
+/* 轮播图 */
+section #carousel{min-width: 1184px;}
+section #carousel .carousel-inner{
+    width:1184px;
+    height:388px;
+    margin: 0 auto;
+}
+/* 轮播图左右箭头位置 */
+section #carousel>.carousel-control-prev,
+section #carousel>.carousel-control-next {
+    width:3%;height:20%;
+    background-color: #999;
+    top:40%;
+    border-radius: 10%;
+}
+/* 轮播图左右箭头位置 */
+section #carousel>.carousel-control-prev{
+    left: 12%;
+}
+section #carousel>.carousel-control-next{
+    right: 12%;
+}
+/* 轮播指示器 */
+section #carousel>.carousel-indicators>li{
+    width:.5rem;height:.5rem;
+    border-radius: 50%;
+    background-color: #999;
+    margin:0 .4rem;
+}
+section #carousel>.carousel-indicators>li:hover{
+    cursor: pointer;
+}
+section #carousel>.carousel-indicators>.active{
+    cursor: pointer;
+    background-color:#00ccff;
+}
+
+/*一楼*/
+section .floor_1{
+    width:1184px;height:586px;
+    margin:0 auto;
+    padding-top:32px;
+}
+/*一楼推荐*/
+section .floor_1>.recom{
+    width:784px;height:554px;
+}
+/*推荐大标题*/
+section .floor_1 h3{
+    font-size: 24px;
+    color:#333;
+}
+/*推荐漫画整体ʽ*/
+section .floor_1>.recom>.cartoon{
+    width:20%;height:277px;
+    float:left;
+    padding: 8px;
+    position:relative;
+}
+/* 作者和点赞数 */
+section .floor_1>.recom>.cartoon>.d-flex{
+    font-size: 12px;
+    color:#999;
+    margin:0;
+}
+/*类型*/
+section .floor_1>.recom .car_type{
+    position: absolute;
+    left:15px;
+    bottom:65px;
+}
+section .floor_1>.recom .car_type>.type_t1,
+section .floor_1>.recom .car_type>.type_t2{
+    background: rgba(0,0,0,.4);
+    color:#fff;
+    font-size: 14px;
+    border-radius:10%;
+}
+/*人气榜*/
+/* 行 */
+section .floor_1>.popula .ranking_col{
+    width:365px;
+    height:36px;
+}
+/*块*/
+section .floor_1>.popula .ranking_block{
+    background: #fff;
+    width:365px;
+    height:0px;
+    position: relative;
+    top:-36px;
+    overflow: hidden; 
+    transition: all .5s linear;
+}
+section .floor_1>.popula .ranking_col:hover+.ranking_block{
+    height: 162px;
+}
+section .floor_1>.popula .ranking_block:hover{
+    height: 162px;
+}
+/* section .floor_1>.popula>.ranking:nth-child(2)>.ranking_block{
+    height: 162px;
+} */
+
+/*鼠标放在行内*/
+
+section .floor_1>.popula .ranking_id1,
+section .floor_1>.popula .ranking_id2{
+    font-size:16px;
+    font-weight: bold;
+    color:rgb(245,166,35);
+}
+section .floor_1>.popula .ranking_id2{
+    color:#000;
+}
+/*更新至*/
+section .floor_1>.popula .ranking_updata{
+    font-size: 14px;
+    color:#999;
+    float:right;
+}
+/*章节*/
+section .floor_1>.popula .ranking_chapter{
+    font-size:14px;
+    color:#f56c6c;
+    white-space:nowrap;
+    width:80px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    float:right;
+}
+section .floor_1>.popula .ranking_chapter:hover{
+    color:#f00;
+}
+/*图片*/
+section .floor_1>.popula .ranking_img{
+    width:120px;
+    height:162px;
+    float:left;
+}
+/* no */
+section .floor_1>.popula .ranking_img_id1{
+    width:24px;
+    height:24px;
+    font-size: 16px;
+    color:#fff;
+    font-weight: bold;
+    text-align:center;
+    border-radius:5px;
+    background: rgba(245,166,35,.7);
+    position: absolute;
+    top:0;
+    left:0;
+}
+/*右侧内容*/
+section .floor_1>.popula .ranking_text{
+    width:224px;
+    height:162px;
+    float:left;
+    margin-left:10px;
+}
+/*漫画名*/
+section .floor_1>.popula .ranking_tname{
+    font-size: 18px;
+    color:#1a1a1a;
+}
+/*漫画类型*/
+section .floor_1>.popula .ranking_type{
+    font-size: 14px;
+    color:#333;
+    padding-right:10px;
+}
+/*介绍*/
+section .floor_1>.popula .ranking_intro{
+    font-size:14px;
+    color:#999;
+}
+/* 更新 */
+section .floor_1>.popula .ranking_block .ranking_updata,
+section .floor_1>.popula .ranking_block .ranking_chapter{
+    float:none;
+}
+
+/*二楼*/
+.floor_2{
+    width:1184px;
+    height:429px;
+    margin:32px auto 0;
+    color:#333;
+}
+/*二楼星期div*/
+.floor_2 .f2_week{
+    width: 1184px;
+    height:35px;
+}
+/* 二楼星期ul */
+.floor_2 .f2_week>.week{
+    list-style: none;
+    margin-bottom: 0;
+}
+.floor_2 .f2_week>.week>li{
+    float:left;
+}
+.floor_2 .f2_week>.week>li>a{
+    display:block;
+    width:32px;
+    height:32px;
+    line-height: 32px;
+    margin-right:28px;
+}
+.floor_2 .f2_week>.week>li>a:link{
+    font-size: 16px;
+    color:#1a1a1a;
+}
+.floor_2 .f2_week>.week>li>a:visited,
+.floor_2 .f2_week>.week>li>a:active{
+    color:#F5A623;
+}
+/*更新的所有漫画*/
+.floor_2 .f2_text{
+    position:relative;
+}
+.floor_2 .week_cart{
+    width:100%;
+    min-width: 1184px;
+    height:356px;
+    background-color: #fff;
+    position: absolute;
+    top:0px;
+    left:0px;
+}
+/* 更新的每个漫画 */
+.floor_2 .week_cart>.f2_cartoon{
+    width:236.8px;
+    height:178px;
+    float: left;
+    padding:10px;
+    position: relative;
+}
+/*漫画类别 */
+.floor_2 .week_cart>.f2_cartoon .f2_cart_type{
+    font-size: 14px;
+    color:#999;
+    float: right;
+}
+/* 漫画作者和点赞 */
+.floor_2 .week_cart>.f2_cartoon .f2_cart_top{
+    width:220px;
+    font-size: 12px;
+    color:#fff;
+    position: absolute;
+    bottom:30px;
+    padding:0 10px;
+    margin:0;
+    box-sizing: border-box;
+}
+/* 作者 */
+.floor_2 .week_cart>.f2_cartoon .f2_cart_top>span:first-child{
+    display: inline-block;
+    white-space:nowrap;
+    width:100px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+/* 点赞数量 */
+.floor_2 .week_cart>.f2_cartoon .f2_cart_top>span:last-child{
+    float: right;
+}
+
+/*三楼*/
+.floor_3{
+    width: 1184px;
+    margin: 24px auto;
+    padding: 0;
+}
+
+/*四楼*/
+.floor_4{
+    width:100%;
+    height:411px;
+    background:url(https://static3w.kuaikanmanhua.com/static-kkfront-pc/image/categories_bg_antiquity.33364ef.jpg) left top / cover no-repeat;
+}
+/*消除四楼和五楼外边距溢出*/
+.floor_4:before,
+.floor_5:before{
+    content:"";
+    display: table;
+}
+/*四楼类别div*/
+.floor_4 .f4_type{
+    width:1184px;
+    height:42px;
+    margin:36px auto 0;
+}
+.floor_4 .f4_type>ul{
+    list-style:none;
+}
+.floor_4 .f4_type>ul>li{
+    float: left;
+}
+.floor_4 .f4_type>ul>li>a{
+    font-size: 24px;
+    color:#fff;
+    display: inline-block;
+    width:150px;
+    line-height:42px;
+    text-align:center;
+}
+.floor_4 .f4_type>ul>li>a:active{
+    font-size: 36px;
+}
+/* 更多 */
+.more{
+    display: block;
+    float: right;
+    width:85px;
+    height:32px;
+    line-height: 32px;
+    text-align: center;
+    font-size:16px;
+    color:#eee;
+    border:1px solid #eee;
+    border-radius: 3px;
+    margin-right: 30px;
+}
+.more:hover{
+    color:#ddd;
+}
+.floor_4 .f4_type>a{
+    cursor: pointer;
+}
+/*四楼类别内容*/
+.floor_4 .f4_text{
+    width:1184px;
+    height:303px;
+    padding-top:20px;
+    margin:0 auto;
+}
+/* 将一个漫画装在a标签里 */
+.floor_4 .f4_text>a{
+    display: block;
+    width:197.3px;
+    height:290px;
+    font-size: 16px;
+    color:#fff;
+    padding:8px;
+    transition: .5s;
+    position: relative;
+    float: left;
+}
+.floor_4 .f4_text>a:hover{
+    cursor: pointer;
+    transform:translateY(-10px);
+}
+/* 漫画图片 */
+.floor_4 .f4_text>a>.f4_carimg{
+    width:184px;
+    height:244px;
+}
+.floor_4 .f4_text .f4_carimg>img{
+    width:100%;
+}
+/* 漫画名 */
+.floor_4 .f4_text>a>p:nth-child(2){
+    margin: 6px 6px 0;
+}
+/* 漫画作者和赞 */
+.floor_4 .f4_text>a>p:last-child{
+    width: 184px;
+    font-size: 12px;
+    color: #fff;
+    margin: 0;
+    padding:0 5px;
+    position: absolute;
+    bottom: 35px;
+}
+/* 作者 */
+.floor_4 .f4_text>a>p>span{
+    background-color: rgba(0,0,0,.5);
+}
+/* 赞 */
+.floor_4 .f4_text>a>p>span:last-child{
+    float: right;
+}
+/*五楼*/
+.floor_5{
+    width:100%;
+    height:700px;
+    background: url(https://static3w.kuaikanmanhua.com/static-kkfront-pc/image/rank_bg_up.09a832b.jpg) left top / cover no-repeat;
+}
+/*五楼榜单名*/
+.floor_5 .f5_type{
+    width:1184px;
+    height:48px;
+    line-height:48px;
+    font-size: 24px;
+    color:#fff;
+    margin:32px auto 24px;
+}
+.floor_5 .f5_type>span{
+    margin-left: 16px;
+}
+.floor_5 .f5_type>span:visited{
+    font-size:26px;
+    color:#ddd; 
+}
+.floor_5 .f5_type>span:hover{
+    cursor:pointer;
+}
+.floor_5 .f5_type>span:active{
+    font-size:26px;
+    color:#ddd; 
+}
+/*榜单漫画*/
+.floor_5 .f5_text{
+    width: 1184px;
+    height:588px;
+    margin:0 auto;
+    position: relative;
+}
+.floor_5 .f5_text>.f5_text_cartoon{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    background: url(https://static3w.kuaikanmanhua.com/static-kkfront-pc/image/rank_bg_up.09a832b.jpg) left top / cover no-repeat;
+}
+/* 漫画a标签*/
+.floor_5 .f5_text .f5_cart{
+    display: block;
+    width:384px;
+    height:180px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin:0 15px 15px 0;
+    float: left;
+}
+/* 取消最右侧三个有外边距 */
+.floor_5 .f5_text .f5_cart:nth-child(3),
+.floor_5 .f5_text .f5_cart:nth-child(6),
+.floor_5 .f5_text .f5_cart:nth-child(9){
+    margin-right:0px;
+}
+/* 图片 */
+.floor_5 .f5_text .f5_cart>.f5_img{
+    width:180px;
+    height:180px;
+    overflow: hidden;
+    border-radius: 5px;
+    float:left;
+}
+.floor_5 .f5_text .f5_cart>.f5_img>img{
+    width:180px;
+    height:240px;
+}
+/* 内容 */
+.floor_5 .f5_text .f5_cart .f5_cart_text{
+    width:192px;
+    height:180px;
+    float:left;
+    font-size: 14px;
+    color:#fff;
+    margin-left:12px;
+}
+/* 右侧名次 */
+.floor_5 .f5_text .f5_cart_text p:first-child{
+    height:40px;
+    padding-top:20px;
+}
+.floor_5 .f5_text .f5_cart .f5_rankid{
+    display: inline-block;
+    width:66px;
+    height:22px;
+    background-color:rgb(255, 216, 6);
+    border-radius:5px;
+    font-size:16px;
+    color:#222;
+    font-weight: bold;
+    text-align:center;
+}
+.floor_5 .f5_text .f5_cart .f5_ranktext{
+    margin-right: 20px;
+    opacity: .8;
+    float: right;
+}
+/* 漫画名 */
+.floor_5 .f5_text .f5_cart p:nth-child(2){
+    font-size: 20px;
+    opacity: 1;
+    margin: 0;
+}
+/* 作者和简介*/
+.floor_5 .f5_text .f5_cart p:nth-child(3),
+.floor_5 .f5_text .f5_cart p:last-child{
+    opacity: .8;
+}
+/* 脚部 */
+footer{
+    width: 100%;
+    min-width: 1184px;
+    height:360px;
+    background:-webkit-linear-gradient(top,#282828,#000);
+    background:-moz-linear-gradient(top,#282828,#000);
+    background:-ms-linear-gradient(top,#282828,#000);
+    background:-o-linear-gradient(top,#282828,#000);
+}
+footer:before{
+    content:"";
+    display:table;
+}
+.fbody{
+    width:1184px;
+    margin:0 auto;
+}
+.fbody>.fli{
+    width:700px;
+    height:160px;
+    margin:18px auto 24px;
+    padding:20px;
+}
+.fbody>.fli>ul{
+    list-style:none;
+
+}
+.fbody>.fli li{
+    float: left;
+    width:120px;
+    height:50px;
+}
+.fbody>.fli a{
+    font-size:24px;
+    color:#aaa;
+    line-height:50px;
+}
+.fbody>.fcopy p{
+    text-align:center;
+    color:#aaa;
+}
+
+

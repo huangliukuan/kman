@@ -1,0 +1,174 @@
+*{margin:0;padding:0;}
+body{
+	font-size:13px;
+	color:#73879c;
+	background:#ddd;
+}
+body>div{
+	position:relative;
+}
+/*用户列表块*/
+.usertitle{
+	width:100%;
+	height:55px;
+	box-sizing:border-box;
+	padding:10px 15px;
+}
+.usertitle>h3{
+	line-height:55px;
+}
+/*横线*/
+hr{
+	height:3px;
+	background:#ccc;
+	border:0 ;
+	margin:0 10px;
+}
+/*用户列表中字*/
+.usertitle>h3{
+	font-size:24px;
+	line-height:55px;
+}
+/*下拉列表和所搜栏*/
+.re_sear{
+	width:100%;
+	height:44px;
+	line-height:44px;
+	margin-top:10px;
+}
+.re_sear>div{
+	width:224px;
+	margin:0 10px;
+	float:left;
+}
+/*下拉前文字*/
+.re_sear>div>label{
+	margin:0 10px;
+}
+/*下拉的边框*/
+.re_sear>div>select{
+	border-radius:5px;
+	outline:0;
+}
+/*搜索栏*/
+.re_sear>.usersearch{
+	width:288px;
+	float:right;
+	margin:0 20px 0 0;
+	position:relative;
+}
+.re_sear>.usersearch>input{
+	width:100%;
+	height:36px;
+	border-radius:5px;
+	padding:10px 15px;
+	outline:0;
+	box-sizing:border-box;
+}
+.re_sear>.usersearch .icon{
+	position: absolute;
+	left:240px;
+	top:7px;
+}
+/*用户信息*/
+.userinfor #usertable{
+	width:100%;
+	margin-top:24px;
+}
+.userinfor table{
+	padding:0 10px;
+}
+.userinfor table tr th{
+	text-align:center;
+	padding:5px;
+	border-bottom:3px solid #ccc;
+}
+/*全选*/
+.userinfor .all>label{
+	margin:0;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+/*用户信息*/
+.userinfor table tr td{
+	height:48px;
+	text-align:center;
+}
+/*操作字体*/
+.userinfor table tr td>a{
+	text-decoration:none;
+	color:#000;
+}
+.userinfor table tr td>a:first-child:after{
+	content:"|";
+	padding-left:5px;
+}	
+/*头像修饰*/
+.userinfor .userimg>img{
+	width:36px;
+	height:36px;
+	margin:4px 0;
+	border-radius:50%;
+}
+/*页码块*/
+.page{
+	width:100%;
+	height:36px;
+	margin:36px 0;
+	
+}
+.page ul{
+	display:flex;
+	padding-left:0;
+	list-style:none;
+	position:absolute;
+	right:48px;
+}
+/*页码li*/
+.page ul>li>a{
+	position:relative;
+	display:block;
+	padding:5px 10px;
+	line-height:20px;
+	font-size:16px;
+	color:#73879c;
+	background-color:#ccc;
+	border:1px solid #ccc;
+	border-radius:5px;
+	box-sizing:border-box;
+	margin-left:8px;
+	text-decoration:none;
+}
+
+.page ul>li>a:hover{
+	color:#005469;
+	background-color:#aaa;
+	border-color:#aaa;
+}
+.page ul>li>a:focus{
+	z-index:2;
+	outline:0;
+	box-shadow:0 0 0 3px rgba(172, 172, 172, 0.5);
+}
+/*能够点击的*/
+div.page>ul>li.pno_n:active>a{
+	background-color: #000;
+}
+/*被点击*/
+.page ul>li>a:active{
+	z-index:1;
+	color:#304358;
+	background-color: #999;
+	border-color: #999;
+}
+.page ul>li>a:disabled {
+	color:#c8dcef;
+	pointer-events:none;
+	cursor:auto;
+	background-color: #eee;
+	border-color: #eee;
+}
+
+
+

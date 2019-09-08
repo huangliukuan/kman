@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="login.css">
+		<script type="text/javascript" src="ajax/register.js"></script>
+	</head>
+	<body>
+		<iframe src="./header.html" frameborder="0" scrolling="no" width="100%" height="64px"></iframe>
+		<section>
+			<table></table>
+			<div class="sbody srbody">
+				<input onblur="checkPhone()" type="text" id="phone" class="input" placeholder="请输入您要注册的手机号"><br>
+				<input  type="password" id="upwd" class="input" placeholder="请输入您的密码"><br>
+				<input onblur="checkUpwd()" type="password" id="cpwd" class="input" placeholder="请重新输入您的密码"><br>
+				<input type="text" id="uname" class="input" placeholder="请输入您的用户名"><br>
+				<div id="pro"></div>
+				<button onclick="userReg()">注册</button>
+				<p>已有账号<a href="login.html" class="ta">立即登录</a></p>
+			</div>
+		</section>
+		<iframe src="./footer.html" frameborder="0" scrolling="no" width="100%" height="300px"></iframe>
+	</body>
+</html>

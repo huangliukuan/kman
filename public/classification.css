@@ -1,0 +1,107 @@
+*{margin:0;padding:0;box-sizing:border-box;}
+a{text-decoration:none;}
+section{
+	max-width:1184px;
+	background:-webkit-linear-gradient(right,#fff 0%,#ccc 50%,#fff 100%);
+	background:-moz-linear-gradient(right,#fff 0%,#eee 50%,#fff 100%);
+	background:-ms-linear-gradient(right,#fff 0%,#eee 50%,#fff 100%);
+	background:-o-linear-gradient(right,#fff 0%,#eee 50%,#fff 100%);
+	margin:0 auto;
+}
+section:after,
+section>.theme>div:after,
+section>.theme:after,
+section>.cartoon:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+section>.theme{
+	max-width:1184px;;height:auto;
+	color:#333;
+	padding:5px;
+}
+section>.theme>.yix{
+	width:100%;height:auto;
+	padding:13px 0;
+}
+section>.theme>.tic{
+	width:100%;height:auto;
+	padding-top:14px;
+}
+section>.theme>.leib{
+	width:100%;height:auto;
+	padding-top:8px;
+}
+section>.theme>div>div:first-child{
+	width:24px
+	height:26px;
+	float:left;
+	line-height:26px;
+	font-size:12px;
+}
+section>.theme>div>div:last-child{
+	max-width:720px;
+	float:left;
+	margin-left:32px;
+	}
+section>.theme a{
+	color:#333;
+}
+/*theme中类型的*/
+section>.theme>div>div:last-child>div {
+	float:left;
+	width:42px;
+	line-height:26px;
+	font-size:12px;
+	text-align:center;
+	margin:0 22px 7px 0;
+	}
+/*选中的背景色*/
+section>.theme .click{
+	background:#00ccff;
+	border-radius:5px;
+}
+/*漫画下的div*/
+section>.cartoon>.cart{
+	width:160px;height:240px;
+	float:left;
+	margin:20px 38.4px;
+}
+/*漫画图片*/
+section>.cartoon>.cart>a>img{
+	width:160px;height:200px;
+	border-radius:5px;
+	transition:.3s;
+}
+section>.cartoon>.cart>a>img:hover{
+	width:165px;height:204px;
+}
+/*漫画名称*/
+section>.cartoon>.cart>a>span{
+	color:#000;
+	font-weight:bold;
+}
+section>.cartoon>.cart>p{padding:5px 0;}
+section>.cartoon>.cart>p span{
+	font-size:12px;
+	color:#888;
+}
+section>.cartoon>.cart>p>span:last-child{
+	float:right;
+}
+section>.page{
+	width:100%;
+	text-align:center;
+	padding:0 0 131px;
+}
+section>.page>a{
+	color:#000;
+	font-size:14px;
+	background-color: #eee;
+	border:1px solid #ccc;
+	border-radius: 5px;
+	padding:5px 10px;
+}
+
+

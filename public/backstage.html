@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+	 <link rel="stylesheet" href="css/bootstrap.css"/>
+	 <link rel="stylesheet" href="admin.css">
+	 <script src="js/jquery.min.js"></script>
+	 <script src="js/popper.min.js"></script>
+	 <script src="js/bootstrap.min.js"></script>
+ </head>
+ <body>
+  <aside>
+   <div class="kman">
+    <a href="">
+     <img class="adminlogo" src="image/logo.jpg" alt="logo">
+     <span>后台管理</span>
+    </a>
+   </div>
+   <div class="welcome">
+    <div>
+     <img class="admin_img1" src="image/user.png" alt="user">
+    </div>
+    <div>
+     <p>欢迎回来!</p>
+     <p>超级管理员</p>
+    </div>
+   </div>
+   <div class="backtext">
+   <p class="backindex">
+     <a href="#">后台首页</a>
+   </p>
+   <div class="datamag">
+    <p>数据管理</p>
+    <div id="data">
+      <div class="card border-0">
+       <div class="card-header">
+        <a data-toggle="collapse" class="card-link dropdown-toggle" href="#cartoon">漫画管理</a>
+       </div>
+       <div id="cartoon" class="collapse" data-parent="#data">
+        <div class="card-body navbar">
+         <ul class="navbar-nav">
+          <li class="nav-item">
+           <a class="nav-link" href="#">漫画列表</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" href="#">多条件检索</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" href="#">漫画添加</a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+      <div class="card border-0">
+       <div class="card-header">
+        <a data-toggle="collapse" class="card-link dropdown-toggle" href="#user">用户管理</a>
+       </div>
+       <div id="user" class="collapse" data-parent="#data">
+        <div class="card-body navbar">
+         <ul class="navbar-nav">
+          <li class="nav-item">
+           <a class="nav-link" href="#">用户列表</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" href="#">用户检索</a>
+          </li>
+         </ul>
+        </div>
+       </div>
+    </div>
+    </div>
+   </div>
+   <div class="textmag">
+    <p >内容管理</p>
+    <div id="text">
+     <div class="card border-0">
+      <div class="card-header">
+       <a data-toggle="collapse" class="card-link dropdown-toggle" href="#indexcar">首页漫画管理</a>
+      </div>
+      <div id="indexcar" class="collapse" data-parent="#text">
+       <div class="card-body navbar">
+        <ul class="navbar-nav">
+         <li class="nav-item">
+          <a class="nav-link" href="#">轮播漫画</a>
+         </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#">首页推荐</a>
+         </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#">人气榜</a>
+         </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#">每日更新</a>
+         </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#">排行榜</a>
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+     <div class="card border-0">
+      <div class="card-header">
+       <a data-toggle="collapse" class="card-link dropdown-toggle" href="#feature">功能页面</a>
+      </div>
+      <div id="feature" class="collapse" data-parent="#text">
+       <div class="card-body navbar">
+        <ul class="navbar-nav">
+         <li class="nav-item">
+          <a class="nav-link" href="#">403错误页面</a>
+         </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#">404错误页面</a>
+         </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#">500错误页面</a>
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </div>
+    </div>
+   </div>
+   <div class="quit"></div>
+  </aside>
+  <section>
+   <div class="rightTop  navbar-light">
+     <span class="navbar-toggler-icon float-left"></span>
+     <div>
+      <div class="rt_admin dropdown float-right">
+       <img class="admin_img2" src="image/user.png" alt=""/>
+       <button class="rt_admin_n btn dropdown-toggle" data-toggle="dropdown">超级管理员</button>
+       <ul class="rt_admin_ul dropdown-menu">
+        <li>
+         <a href="#">基本信息</a>
+        </li>
+        <li>
+         <a href="#">用户设置</a>
+        </li>
+        <li>
+         <a href="#">使用说明</a>
+        </li>
+        <li>
+         <a href="#">退出登录</a>
+        </li>
+       </ul>
+      </div>
+     </div>
+   </div>
+   <div class="r_text">
+     <div class="rt_num">
+      <span>上架漫画总数量</span>
+      <div>28395</div>
+      <span><span class="lifting rise">↑5%</span>较上个月</span>
+     </div>
+    <div class="rt_num">
+     <span>漫画访问最高次数</span>
+     <div class="drop">2519394</div>
+     <span><span class="lifting drop">↓7%</span>较上个月</span>
+    </div>
+    <div class="rt_num">
+     <span>用户总数量</span>
+     <div class="rise">368294</div>
+     <span><span class="lifting rise">↑2%</span>较上个月</span>
+    </div>
+    <div class="rt_num">
+     <span>当日PC端PV量</span>
+     <div class="drop">122395</div>
+     <span><span class="lifting drop">↓15%</span>较上个月</span>
+    </div>
+    <div class="rt_num">
+     <span>移动端PV量</span>
+     <div class="rise">258395</div>
+     <span><span class="lifting rise">↑10%</span>较上个月</span>
+    </div>
+    <div class="rt_num">
+     <span>APP总下载量</span>
+     <div class="rise">15395</div>
+     <span><span class="lifting rise">↑5%</span>较上个月</span>
+    </div>
+   </div>
+  </section>
+ </body>
+</html>
