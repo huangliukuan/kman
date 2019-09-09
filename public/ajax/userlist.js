@@ -1,6 +1,6 @@
 // 点击下拉菜单修改页面用户数量
 var $select=document.querySelector("div.re_sear>div>select.records");
-$select.onclick=function(){
+$select.onchange=function(){
 	//获得下拉的值赋值给
 	var $size=this.value;
 	var $pno=1;
