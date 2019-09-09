@@ -60,7 +60,11 @@ header>.hbody .breadcrumb-item + .breadcrumb-item::before{
 }
 
 /* 轮播图 */
-section #carousel{min-width: 1184px;}
+section #carousel{
+    width: 1184px;
+    margin: 0 auto;
+    position: relative;
+}
 section #carousel .carousel-inner{
     width:1184px;
     height:388px;
@@ -76,10 +80,12 @@ section #carousel>.carousel-control-next {
 }
 /* 轮播图左右箭头位置 */
 section #carousel>.carousel-control-prev{
-    left: 12%;
+    position: absolute;
+    left: 5%;
 }
 section #carousel>.carousel-control-next{
-    right: 12%;
+    position: absolute;
+    right: 5%;
 }
 /* 轮播指示器 */
 section #carousel>.carousel-indicators>li{

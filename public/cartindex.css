@@ -1,0 +1,47 @@
+*{margin: 0;padding:0;}
+/* 左浮动 */
+.flo_left{
+  float: left;
+}
+/* 主内容 */
+section{
+  color:#333;
+  font-size:16px;
+  font-family: PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial;
+  width: 1184px;
+  margin:0 auto;
+}
+section>.cartbox{
+  width:1170px;
+  margin: 30px 7px;
+  padding:0 15px;
+}
+section>.cartbox>.cartlist{
+  width: 1138px;
+  border-radius: 6px;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+}
+/* 头部 */
+section>.cartbox>.cartlist>.cartheader{
+  box-sizing:border-box;
+  margin:0 24px;
+  padding:30px 0 45px;
+  border-bottom:1px solid #e5e5e5;
+}
+/* 头部左边 */
+section .cartheader>.cartleft{
+  position: relative;
+  margin-right: 40px;
+  width:338px;
+  height:213px;
+  border:1px solid #e5e5e5;
+  border-radius: 8px;
+  overflow: hidden;
+}
+/* 头部右边漫画名 */
+section .cartheader>.cartright>h3{
+  width:710px;
+  font-weight: normal;
+}
+
