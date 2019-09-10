@@ -3,6 +3,9 @@
 .flo_left{
   float: left;
 }
+.flo_right{
+  float: right;
+}
 /* 去掉a的下划线 */
 a{text-decoration: none;}
 /* 去掉ul左侧中的点*/
@@ -118,7 +121,34 @@ section .cartheader .btnsList>.cartbtns>a:last-child{
   background: #fff;
 }
 /* 按钮右侧 */
-section .cartheader .btnsList>.btnsListRight{
+section .btnsList>.btnsListRight{
   padding-top: 12px;
-  float:right;
+}
+/* 分享 */
+section .btnsList>.btnsListRight>.btnShare:hover{
+  cursor: pointer;
+}
+/* 分享类别 */
+section .btnsList>.btnsListRight>ul{
+  border:1px solid #e5e5e5;
+  width:96px;
+  padding: 5px;
+  margin:0;
+  box-sizing: border-box;
+  display: none;
+}
+section .btnsList>.btnsListRight>ul>li:first-child{
+  font-size: 12px;
+  background: #eee;
+}
+section .btnsList>.btnsListRight>ul>li+li{
+  margin: 4px 4px;
+  line-height: 16px;
+  font-size: 12px;
+  color: #333;
+  box-sizing: border-box;
+  cursor: pointer; 
+}
+section .btnsList>.btnsListRight>ul>li+li:hover{
+  background: #eee;
 }
