@@ -6,12 +6,23 @@
 .flo_right{
   float: right;
 }
+img {
+  vertical-align: middle;
+}
 /* 去掉a的下划线 */
 a{text-decoration: none;}
 /* 去掉ul左侧中的点*/
 ul{
   list-style: none;
   padding-left: 0;
+}
+/* 清除高度坍塌 */
+section .cartlist .cartChp:after,
+section>.cartbox>.cartlist>.cartheader:after,
+section>.cartbox>.cartlist:after{
+  content: "";
+  display: block;
+  clear:both;
 }
 /* 主内容 */
 section{
@@ -21,12 +32,7 @@ section{
   width: 1184px;
   margin:0 auto;
 }
-section>.cartbox>.cartlist>.cartheader:after,
-section>.cartbox>.cartlist:after{
-  content: "";
-  display: block;
-  clear:both;
-}
+
 section>.cartbox{
   width:1170px;
   margin: 30px 7px;
@@ -101,7 +107,6 @@ section .cartheader>.cartright>.btnsList>.cartbtns>a{
   border-radius: 18px;
   text-align: center;
   white-space: nowrap;
-  vertical-align: middle;
   font-size: 14px;
   font-weight: 400;
   color: #666;
@@ -120,13 +125,24 @@ section .cartheader .btnsList>.cartbtns>a:last-child{
   border: 1px solid #999;
   background: #fff;
 }
+section .cartheader .btnsList>.cartbtns>a:last-child:hover{
+  background-color: #ccc;
+}
 /* 按钮右侧 */
 section .btnsList>.btnsListRight{
   padding-top: 12px;
+  position: relative;
 }
 /* 分享 */
 section .btnsList>.btnsListRight>.btnShare:hover{
   cursor: pointer;
+  color:#ffd704;
+}
+section .btnsList>.btnsListRight>.btnShare:hover+ul{
+  display: block;
+}
+section .btnsList>.btnsListRight>ul:hover{
+  display: block;
 }
 /* 分享类别 */
 section .btnsList>.btnsListRight>ul{
@@ -136,6 +152,9 @@ section .btnsList>.btnsListRight>ul{
   margin:0;
   box-sizing: border-box;
   display: none;
+  position: absolute;
+  top:32px;
+  left: 0;
 }
 section .btnsList>.btnsListRight>ul>li:first-child{
   font-size: 12px;
@@ -151,4 +170,69 @@ section .btnsList>.btnsListRight>ul>li+li{
 }
 section .btnsList>.btnsListRight>ul>li+li:hover{
   background: #eee;
+}
+/* 人气和点赞 */
+section .btnsList>.btnsListRight>span{
+  display:inline-block;
+  margin:0 32px;
+}
+section .btnsList>.btnsListRight>span:last-child{
+  margin-right:0; 
+}
+/*章节 */
+section .cartlist .cartChp{
+  text-align: center;
+  margin:0 24px;
+  padding:16px 0;
+  box-sizing: border-box;
+  border-bottom:1px solid #e5e5e5;
+}
+section .cartlist .cartChp>.chpImg{
+  width:30%;
+}
+section .cartlist .cartChp>.chpImg>a{
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 112px;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  overflow: hidden;
+}
+section .cartlist .cartChp>.chpImg>a>img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: none;
+  transition: all .5s linear;
+}
+section .cartlist .cartChp>.chpImg>a>img:hover{
+  transform: scale(1.1);
+}
+/* 章节名 */
+section .cartlist .cartChp>.chpName{
+  width:40%;
+}
+section .cartlist .cartChp>div>span,
+section .cartlist .cartChp>.chpName>a{
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 6px;
+  line-height: 112px;
+  outline: 0;
+  color: #333;
+  font-size: 14px;
+  transition: 0.2s;
+  font-weight: 300;
+}
+section .cartlist .cartChp>.chpName>a:hover{
+  color:#ffd704;
+}
+section .cartlist .cartChp>.laud,
+section .cartlist .cartChp>.data{
+  width:15%;
 }
