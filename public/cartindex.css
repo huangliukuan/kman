@@ -180,6 +180,9 @@ section .btnsList>.btnsListRight>span:last-child{
   margin-right:0; 
 }
 /*章节 */
+section .cartlist>.chpBox{
+  padding-bottom:36px;
+}
 section .cartlist .cartChp{
   text-align: center;
   margin:0 24px;
@@ -216,16 +219,17 @@ section .cartlist .cartChp>.chpImg>a>img:hover{
 /* 章节名 */
 section .cartlist .cartChp>.chpName{
   width:40%;
+  
 }
 section .cartlist .cartChp>div>span,
 section .cartlist .cartChp>.chpName>a{
   display: inline-block;
   vertical-align: middle;
   padding: 0 6px;
-  line-height: 112px;
   outline: 0;
   color: #333;
   font-size: 14px;
+  line-height: 112px;
   transition: 0.2s;
   font-weight: 300;
 }
