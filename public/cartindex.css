@@ -17,6 +17,7 @@ ul{
   padding-left: 0;
 }
 /* 清除高度坍塌 */
+section .cartbox>.recBox::after,
 section .cartlist .cartChp:after,
 section>.cartbox>.cartlist>.cartheader:after,
 section>.cartbox>.cartlist:after{
@@ -239,4 +240,110 @@ section .cartlist .cartChp>.chpName>a:hover{
 section .cartlist .cartChp>.laud,
 section .cartlist .cartChp>.data{
   width:15%;
+}
+
+/* 推荐 */
+section .cartbox>.recBox{
+  width:1138px;
+  margin-top:36px;
+  border-radius: 6px;
+  border:1px solid #e5e5e5;
+}
+section .recBox>.recTitle{
+  height:20px;
+  line-height: 20px;
+  background-color: #fbfbfb;
+  border-radius: 6px;
+  padding:12px;
+}
+section .recBox>.recTitle>h5{
+  font-weight: normal;
+}
+section .recBox>.recTitle>h5>i{
+  display:block;
+  width: 6px;
+  height: 20px;
+  background-color: #f5d531;
+  border-radius: 3px;
+}
+section .recBox>.recTitle>h5>span{
+  font-size: 16px;
+  color:#666;
+  padding-left:6px; 
+}
+/* 推荐漫画 */
+section .recBox>.recCartList{
+  padding:20px 10px 20px 13px;
+}
+section .recBox .recCart{
+  width:200px;
+  border:1px solid #e5e5e5;
+  margin:0 10px 15px 10px;
+  border-radius: 3px;
+}
+/* 图片 */
+section .recBox .recCart>.imgBox{
+  width:100%;
+  height: 113px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+section .recBox .recCart>.imgBox>img{
+  width:100%;
+  height:100%;
+}
+section .recBox .recCart>.imgBox>.blankImg{
+  width:100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left:0;
+  padding: 10px 8px;
+  background: #fbd719;
+  opacity: 0.8;
+  box-sizing: border-box;
+  display: none;
+}
+section .recBox .recCart>.imgBox>img:hover+.blankImg{
+  display: block;
+}
+section .recBox .recCart>.imgBox>.blankImg:hover{
+  display: block;
+}
+section .recBox .recCart>.imgBox>.blankImg>p{
+  font-size: 14px;
+  color:#333;
+  margin-bottom: 10px;
+}
+
+/* 漫画信息 */
+section .recBox .recCart>.infor{
+  padding:0 5px;
+}
+/* 漫画名 */
+section .recBox .recCart>.infor>p{
+  padding: 10px 0 6px;
+}
+section .recBox .recCart>.infor>p>a{
+  line-height: 24px;
+  display: block;
+  width:100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #333;
+  font-size: 14px;
+}
+section .recBox .recCart>.infor>p>a:hover{
+  color: #f5ce03;
+}
+section .recCart>.infor>.inforFooter{
+  padding:5px 0;
+  color:#333; 
+  font-size: 14px;
+}
+section svg{
+  vertical-align: center;
+  margin-right: 5px;
 }
