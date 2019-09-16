@@ -1,3 +1,4 @@
+
 .float{
     float:left;
 }
@@ -73,15 +74,80 @@ section .carCont>.ulImg{
   list-style: none;
   width: 1184px;
   margin-left:0px;
+  padding: 0;
 }
 section .carCont>.ulImg>.liImg{
   width:1184px;
   float: left;
 }
+section .carCont>.ulImg>.liImg a{
+    display: block;
+    width:296px;
+    height:345px;
+    float: left;
+    padding:5px;
+    
+    box-sizing: border-box;
+}
+section .carCont>.ulImg>.liImg img{
+    width:100%;
+    height:100%;
+    border-radius: 5px;
+}
+/* 小圆点 */
+section .carCont>.ulIdxs{
+    width:80px;
+    margin:0 auto;
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left:-40px; 
+    padding:0;
+}
+section .carCont>.ulIdxs>li{
+    width: 10px;
+    height:10px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor:pointer;
+    float: left;
+    margin:0 5px;
+}
+section .carCont>.ulIdxs>li.active{
+    background-color: #007FFF;
+}
+/* 左右按钮 */
+section .carCont>.btnPrev,
+section .carCont>.btnNext{
+    width:60px;
+    height:40px;
+    position:absolute;
+    top:50%;
+    margin-top:-20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor:pointer;
+}
+section .carCont>.btnPrev{
+    left:20px;
+    background-image: url(image/carousel/prev1.png);
+}
+section .carCont>.btnNext{
+    right:20px;
+    background-image: url(image/carousel/next1.png);
+}
 
-
-
-
+    /* section .carCont>.btnPrev:hover{
+        background-image: url(image/carousel/prev2.png);
+    }
+    section .carCont>.btnNext:hover{
+        background-image: url(image/carousel/next2.png);
+    } */
+section .carCont>.btnPrev:hover,
+section .carCont>.btnNext:hover{
+    background-size: 70px 80px;
+}
 
 /*一楼*/
 section .floor_1{
