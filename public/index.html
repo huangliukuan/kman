@@ -62,86 +62,37 @@
     </div>
 </header>
 <section>
-    <!-- 轮播图-->
-    <div id="carousel" class="carousel" data-ride="carousel">
-        <!-- 轮播图片-->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <a class="w-25 d-block float-left p-1" href="c">
-                    <img class="img-fluid rounded" src="image/carousel/carousel1.jpg" alt=""/>
-                </a>
-                <a class="w-25 d-block float-left p-1" href="">
-                    <img class="img-fluid rounded"  src="image/carousel/carousel2.jpg" alt=""/>
-                </a>
-                <a class="w-25 d-block float-left p-1" href="">
-                    <img class="img-fluid rounded" src="image/carousel/carousel3.jpg" alt=""/>
-                </a>
-                <a class="w-25 d-block float-left p-1" href="">
-                    <img class="img-fluid rounded" src="image/carousel/carousel4.jpg" alt=""/>
-                </a>
-            </div>
-            <div class="carousel-item">
-                <a class="w-25 d-block float-left p-1" href="">
-                    <img class="img-fluid rounded" src="image/carousel/carousel5.jpg" alt=""/>
-                </a>
-                <a class="w-25 d-block float-left p-1" href="">
-                    <img class="img-fluid rounded" src="image/carousel/carousel6.jpg" alt=""/>
-                </a>
-                <a class="w-25 d-block float-left p-1" href="">
-                    <img class="img-fluid rounded" src="image/carousel/carousel7.jpg" alt=""/>
-                </a>
-                <a class="w-25 d-block float-left p-1" href="">
-                    <img class="img-fluid rounded" src="image/carousel/carousel8.jpg" alt=""/>
-                </a>
-            </div>
-            <div class="carousel-item">
-                <a class="w-25 d-block float-left p-1" href="">
-                    <img  class="img-fluid roundeds" src="image/carousel/carousel9.jpg" alt=""/>
-                </a>
-                <a class="w-25 d-block float-left p-1" href="">
-                    <img class="img-fluid rounded" src="image/carousel/carousel10.jpg" alt=""/>
-                </a>
-                <a class="w-25 d-block float-left p-1" href="">
-                    <img class="img-fluid rounded" src="image/carousel/carousel11.jpg" alt=""/>
-                </a>
-                <a class="w-25 d-block float-left p-1" href="">
-                    <img class="img-fluid rounded" src="image/carousel/carousel12.jpg" alt=""/>
-                </a>
-            </div>
-            <div class="carousel-item">
-                <a class="w-25 d-block float-left p-1" href="">
-                    <img class="img-fluid rounded" src="image/carousel/carousel13.jpg" alt=""/>
-                </a>
-                <a class="w-25 d-block float-left p-1" href="">
-                    <img class="img-fluid rounded" src="image/carousel/carousel14.jpg" alt=""/>
-                </a>
-                <a class="w-25 d-block float-left p-1" href="">
-                    <img class="img-fluid rounded" src="image/carousel/carousel15.jpg" alt=""/>
-                </a>
-                <a class="w-25 d-block float-left p-1" href="">
-                    <img class="img-fluid rounded" src="image/carousel/carousel16.jpg" alt=""/>
-                </a>
-            </div>
-        </div>
-        <!-- 左右箭头-->
-        <a data-slide="prev" class="carousel-control-prev" href="#carousel">
-            <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a data-slide="next" class="carousel-control-next " href="#carousel">
-            <span class="carousel-control-next-icon"></span>
-        </a>
-        <!-- 轮播指示器-->
-        <ul class="carousel-indicators">
-            <li class="active" data-slide-to="0" data-target="#carousel"></li>
-            <li data-slide-to="1" data-target="#carousel"></li>
-            <li data-slide-to="2" data-target="#carousel"></li>
-            <li data-slide-to="3" data-target="#carousel"></li>
-        </ul>
-    </div>
+<!-- 轮播图-->
+<div class="carousel">
+  <div class="carCont">
+    <div id="btnPrev"></div>
+    <ul class="ulImg">
+      <li class="liImg">
+        <span>
+          <a href="javascript:;">
+            <img src="image/carousel/carousel1.jpg" alt="斗破苍穹"> 
+          </a>
+        </span>
+        <span>
+            <a href="javascript:;">
+              <img src="image/carousel/carousel1.jpg" alt="斗破苍穹"> 
+            </a>
+          </span>
+      </li>
+    </ul>
+    <ul class="ulIdxs">
+      <li class="active" ></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <div id="btnNext"></div>
+  </div>  
+</div>
     <!-- 推荐和人气榜-->
     <div class="floor_1">
-        <!-- 推荐-->
-        <div class="recom float active">
+      <!-- 推荐-->
+      <div class="recom float active">
             <h3 class="m-0">脑洞大开的世界!</h3>
             <div class="cartoon">
                 <a href="javascript:;">
@@ -283,9 +234,9 @@
                     <span><svg t="1567841346621" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5830" width="16" height="16"><path d="M884.875894 423.143253 646.970506 423.143253c92.185562-340.464205-63.516616-357.853247-63.516616-357.853247-65.993017 0-52.312436 52.182476-57.3031 60.881602 0 166.502152-176.849824 296.971645-176.849824 296.971645l0 472.171899c0 46.607504 63.516616 63.393819 88.433098 63.393819l357.452111 0c33.641191 0 61.036122-88.224344 61.036122-88.224344 88.434122-300.70569 88.434122-390.177444 88.434122-390.177444C944.657442 418.179195 884.875894 423.143253 884.875894 423.143253L884.875894 423.143253 884.875894 423.143253zM884.875894 423.143253" p-id="5831" fill="#8a8a8a"></path><path d="M251.671415 423.299819 109.214912 423.299819c-29.420053 0-29.873378 28.89612-29.873378 28.89612l29.420053 476.202703c0 30.309306 30.361495 30.309306 30.361495 30.309306L262.420223 958.707948c25.686009 0 25.458835-20.049638 25.458835-20.049638L287.879058 459.411271C287.879058 422.837284 251.671415 423.299819 251.671415 423.299819L251.671415 423.299819 251.671415 423.299819zM251.671415 423.299819" p-id="5832" fill="#8a8a8a"></path></svg>99万+</span>
                 </p>
             </div>
-        </div>
-        <!-- 人气榜-->
-        <div class="popula float">
+      </div>
+      <!-- 人气榜-->
+      <div class="popula float">
             <h3>人气榜</h3>
             <div class="ranking">
                 <div class="ranking_col" >
@@ -607,7 +558,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+      </div>
     </div>
     <!--每日更新 -->
     <div class="floor_2">

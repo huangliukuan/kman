@@ -60,47 +60,28 @@ header>.hbody .breadcrumb-item + .breadcrumb-item::before{
 }
 
 /* 轮播图 */
-section #carousel{
-    width: 1184px;
-    margin: 0 auto;
+section .carousel{
+    width:1184px;
+    margin:0 auto;
+}
+section .carCont{
+    width:1184px;
+    overflow: hidden;
     position: relative;
 }
-section #carousel .carousel-inner{
-    width:1184px;
-    height:388px;
-    margin: 0 auto;
+section .carCont>.ulImg{
+  list-style: none;
+  width: 1184px;
+  margin-left:0px;
 }
-/* 轮播图左右箭头位置 */
-section #carousel>.carousel-control-prev,
-section #carousel>.carousel-control-next {
-    width:3%;height:20%;
-    background-color: #999;
-    top:40%;
-    border-radius: 10%;
+section .carCont>.ulImg>.liImg{
+  width:1184px;
+  float: left;
 }
-/* 轮播图左右箭头位置 */
-section #carousel>.carousel-control-prev{
-    position: absolute;
-    left: 5%;
-}
-section #carousel>.carousel-control-next{
-    position: absolute;
-    right: 5%;
-}
-/* 轮播指示器 */
-section #carousel>.carousel-indicators>li{
-    width:.5rem;height:.5rem;
-    border-radius: 50%;
-    background-color: #999;
-    margin:0 .4rem;
-}
-section #carousel>.carousel-indicators>li:hover{
-    cursor: pointer;
-}
-section #carousel>.carousel-indicators>.active{
-    cursor: pointer;
-    background-color:#00ccff;
-}
+
+
+
+
 
 /*一楼*/
 section .floor_1{
