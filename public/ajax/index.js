@@ -73,8 +73,29 @@ var carCont=document.querySelector("section .carousel>.carCont");
 carCont.onmouseover=function(){
 	clearInterval(timer);
 }
-
-
+carCont.onmouseout=function(){
+	timer=setInterval(function(){
+		moveTo();
+	},times);
+}
+//点击小圆点跳转页面
+ulIdxs.onclick=function(e){
+  if(canClick){
+    if(e.target.nodeName=="LI"){
+      if(e.target.className!=="active"){
+        for(var i=0;i<lis.length;i++){
+          if(lis[i]==e.target){
+            break;
+          }
+        }
+        moveTo(i);
+        setTimeout(() => {
+          canClick=true;
+        },DURATION);
+      }
+    }
+  }
+}
 
 
 

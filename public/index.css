@@ -1,6 +1,9 @@
 
-.float{
+.flo_l{
     float:left;
+}
+.flo_r{
+    float: right;
 }
 a:hover{text-decoration: none;}
 /* 鼠标悬停图片缩小 */
@@ -101,7 +104,7 @@ section .carCont>#ulImg>.liImg img{
     border-radius: 5px;
 }
 /* 小圆点 */
-section .carCont>.ulIdxs{
+section .carCont>#ulIdxs{
     width:80px;
     margin:0 auto;
     list-style: none;
@@ -111,7 +114,7 @@ section .carCont>.ulIdxs{
     margin-left:-40px; 
     padding:0;
 }
-section .carCont>.ulIdxs>li{
+section .carCont>#ulIdxs>li{
     width: 10px;
     height:10px;
     background-color: #fff;
@@ -120,7 +123,7 @@ section .carCont>.ulIdxs>li{
     float: left;
     margin:0 5px;
 }
-section .carCont>.ulIdxs>li.active{
+section .carCont>#ulIdxs>li.active{
     background-color: #007FFF;
 }
 /* 左右按钮 */
@@ -166,9 +169,10 @@ section .floor_1>.recom{
     width:784px;height:554px;
 }
 /*推荐大标题*/
-section .floor_1 h3{
+section .floor_1>.recom>h3{
     font-size: 24px;
     color:#333;
+    padding-left:24px;
 }
 /*推荐漫画整体ʽ*/
 section .floor_1>.recom>.cartoon{
@@ -177,12 +181,24 @@ section .floor_1>.recom>.cartoon{
     padding: 8px;
     position:relative;
 }
+section .floor_1>.recom>.cartoon img{
+    width:100%;
+}
 /* 作者和点赞数 */
-section .floor_1>.recom>.cartoon>.d-flex{
+section .floor_1>.recom>.cartoon>.nameLaud{
     font-size: 12px;
     color:#999;
     margin:0;
+    padding:0 5px; 
 }
+section .floor_1>.recom>.cartoon>.nameLaud>span:first-child{
+    display: inline-block;
+    width:48px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 /*类型*/
 section .floor_1>.recom .car_type{
     position: absolute;
