@@ -60,6 +60,13 @@ header>.hbody .breadcrumb-item + .breadcrumb-item::before{
     content:"|";
 }
 
+/* 清理高度坍塌 */
+section .carCont>.ulImg:after,
+section .carCont>.ulImg>.liImg:after{
+    content:"";
+    display: block;
+    clear: both;
+}
 /* 轮播图 */
 section .carousel{
     width:1184px;
@@ -70,26 +77,25 @@ section .carCont{
     overflow: hidden;
     position: relative;
 }
-section .carCont>.ulImg{
-  list-style: none;
-  width: 1184px;
-  margin-left:0px;
-  padding: 0;
+section .carCont>#ulImg{
+    list-style: none;
 }
-section .carCont>.ulImg>.liImg{
-  width:1184px;
-  float: left;
+section .carCont>#ulImg.trans{
+    transition:all .5s linear;
 }
-section .carCont>.ulImg>.liImg a{
+section .carCont>#ulImg>.liImg{
+    width:1184px;
+    float: left;
+}
+section .carCont>#ulImg>.liImg a{
     display: block;
     width:296px;
     height:345px;
     float: left;
     padding:5px;
-    
-    box-sizing: border-box;
+    box-sizing: border-box;  
 }
-section .carCont>.ulImg>.liImg img{
+section .carCont>#ulImg>.liImg img{
     width:100%;
     height:100%;
     border-radius: 5px;
