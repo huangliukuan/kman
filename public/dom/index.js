@@ -1,4 +1,6 @@
-// 轮播图
+
+/*******************轮播图****************/
+
  //图片下标位置
  var i=0;
  //每次轮播长度
@@ -97,7 +99,23 @@ ulIdxs.onclick=function(e){
   }
 }
 
+/***************人气榜 ******************/
+//先获得
+var ranking=document.querySelector("section .floor_1>.popula");
 
+ranking.onmouseover=function(e){
+	var col=document.querySelectorAll("section .floor_1>.popula>.ranking:nth-child(2) .ranking_block");
+	console.log(col);
+	console.log(e.target.nodeName!=col)
+	if(e.target.nodeName!=col){
+		console.log(111)
+		col.style.height=0;
+	}
+}
+
+
+
+/****************** 按钮****************/
 
 // 1.查找触发事件的元素
 // 查找所有带有data-click属性,且属性值为tab的元素

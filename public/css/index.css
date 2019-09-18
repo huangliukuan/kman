@@ -17,7 +17,7 @@ a:hover{text-decoration: none;}
 .carName{
     font-size: 14px;
     color:#333;
-    padding:4px 6px;
+    padding:4px 6px ;
     margin: 0;
 }
 .carName:hover{
@@ -184,6 +184,11 @@ section .floor_1>.recom>.cartoon{
 section .floor_1>.recom>.cartoon img{
     width:100%;
 }
+section .floor_1>.recom>.cartoon p.carName{
+    width: 144px;
+    height: 28px;
+    line-height: 28px;
+}
 /* 作者和点赞数 */
 section .floor_1>.recom>.cartoon>.nameLaud{
     font-size: 12px;
@@ -231,6 +236,7 @@ section .floor_1>.popula .ranking_block{
 section .floor_1>.popula .ranking_col:hover+.ranking_block{
     height: 162px;
 }
+section .floor_1>.popula>.ranking:nth-child(2) .ranking_block,
 section .floor_1>.popula .ranking_block:hover{
     height: 162px;
 }
@@ -257,10 +263,11 @@ section .floor_1>.popula .ranking_updata{
 }
 /*章节*/
 section .floor_1>.popula .ranking_chapter{
+    line-height: 21px;
     font-size:14px;
     color:#f56c6c;
     white-space:nowrap;
-    width:80px;
+    width:120px;
     overflow: hidden;
     text-overflow:ellipsis;
     float:right;
