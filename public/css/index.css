@@ -8,6 +8,7 @@
 a:hover{text-decoration: none;}
 /* 鼠标悬停图片缩小 */
 .changeBig{
+    width: 100%;
     transition: 1s;
 }
 .changeBig:hover{
@@ -140,11 +141,11 @@ section .carCont>.btnNext{
 }
 section .carCont>.btnPrev{
     left:20px;
-    background-image: url(image/carousel/prev1.png);
+    background-image: url(../image/carousel/prev1.png);
 }
 section .carCont>.btnNext{
     right:20px;
-    background-image: url(image/carousel/next1.png);
+    background-image: url(../image/carousel/next1.png);
 }
 
     /* section .carCont>.btnPrev:hover{
@@ -225,7 +226,7 @@ section .floor_1>.popula .ranking_col{
 }
 /*块*/
 section .floor_1>.popula .ranking_block{
-    background: #fff;
+    background-color: #fff;
     width:365px;
     height:0px;
     position: relative;
@@ -233,16 +234,17 @@ section .floor_1>.popula .ranking_block{
     overflow: hidden; 
     transition: all .5s linear;
 }
-section .floor_1>.popula .ranking_col:hover+.ranking_block{
+/* section .floor_1>.popula .ranking_col:hover+.ranking_block{ 
     height: 162px;
 }
-section .floor_1>.popula>.ranking:nth-child(2) .ranking_block,
+section .floor_1>.popula .ranking:nth-child(1) .ranking_block,
 section .floor_1>.popula .ranking_block:hover{
     height: 162px;
 }
-/* section .floor_1>.popula>.ranking:nth-child(2)>.ranking_block{
-    height: 162px;
-} */
+*/
+ /* section .floor_1>.popula>.rank>.ranking:first-child .ranking_block{
+
+}  */
 
 /*鼠标放在行内*/
 

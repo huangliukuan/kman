@@ -101,19 +101,19 @@ ulIdxs.onclick=function(e){
 
 /***************人气榜 ******************/
 //先获得
-var ranking=document.querySelector("section .floor_1>.popula");
-
-ranking.onmouseover=function(e){
-	var col=document.querySelectorAll("section .floor_1>.popula>.ranking:nth-child(2) .ranking_block");
-	console.log(col);
-	console.log(e.target.nodeName!=col)
-	if(e.target.nodeName!=col){
-		console.log(111)
-		col.style.height=0;
+var ranks=document.querySelector(".floor_1>.popula>.rank");
+ranks.onmouseover=function(e){
+	if(e.target.className=="ranking_col"){
+		var blocks=document.querySelectorAll(".floor_1>.popula>.rank .ranking_block");
+		for(block of blocks){
+			if(block.previousElementSibling==e.target){
+				e.target.nextElementSibling.style.height="169px"
+			}else{
+				block.style.height="0px"
+			}
+		}
 	}
 }
-
-
 
 /****************** 按钮****************/
 
