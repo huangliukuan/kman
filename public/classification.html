@@ -4,9 +4,14 @@
 		<title></title>
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" href="css/classification.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/vue.js"></script>
+		<script src="js/MyHeader.js"></script>
 	</head>
 	<body>
-			<iframe src="./header.html" frameborder="0" scrolling="no" width="100%" height="62px"></iframe>
+		<header id="app">
+			<my-header></my-header>
+		</header>
 		<section>
 			<div class="theme">
 				<div class="yix">
@@ -267,5 +272,14 @@
 			</div>	
 		</section>
 		<iframe src="./footer.html" frameborder="0" scrolling="no" width="100%" height="300px"></iframe>
+		<script>
+		Vue.component("my-header",MyHeader)
+		new Vue({
+			el:'#app',
+			data:{
+
+			}
+		}) 
+		</script>
 	</body>
 </html>

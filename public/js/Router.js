@@ -1,0 +1,3 @@
+var router=new VueRouter({
+  
+})

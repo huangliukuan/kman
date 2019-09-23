@@ -46,7 +46,7 @@ hr{
 
 aside{
 	width:230px;
-	height:auto;
+	height:720px;
 	background:#2A3F54;
 	color: #ECF0F1;
 	float:left;
@@ -64,22 +64,22 @@ aside>.kman>a>.adminlogo{
 }
 aside>.kman>a{
 	font-size:22px;
-	line-height: 55px;
+	line-height: 65px;
 }
 aside>.welcome{
 	width:100%;
-	height:80px;
+	height:100px;
 }
 aside>.welcome>div{
 	float:left;
 }
 aside>.welcome>div:first-child{
 	width:100px;
-	height:80px;
+	height:100px;
 }
 aside>.welcome>div:last-child{
 	width:130px;
-	height:80px;
+	height:100px;
 }
 aside>.welcome>div:first-child>.admin_img1{
 	width: 61px;
@@ -101,20 +101,22 @@ aside>.backtext{
 	height:422px;
 	font-size:13px;
 }
+
 aside>.backtext>.backindex{
 	width:100%;
 	height:45px;
 	line-height: 45px;
 	padding-left: 30px;
-	margin: 25px 0;
+	margin: 45px 0;
 }
+
 aside>.backtext>.datamag{
-	margin-bottom:50px;
+	margin-bottom:75px;
 }
 aside>.backtext>.datamag>p:first-child,
 aside>.backtext>.textmag>p:first-child{
 	font-size: 12px;
-	margin:0;
+	margin:20px 0;
 	padding-left: 15px;
 }
 aside>.backtext #data .card-header,
@@ -126,6 +128,7 @@ aside>.backtext #text .card-body,
 aside>.backtext #feature .card-header,
 aside>.backtext #feature .card-body{
 	background-color:#2A3F54;
+
 }
 
 /*退出边背景*/
@@ -136,6 +139,10 @@ aside>.backtext #feature .card-body{
 	position: fixed;
 	left:0px;
 	bottom: 0px;
+}
+.quit>svg{
+	float: right;
+	margin-right: 15px;
 }
 /*右侧内容区域*/
 section{
@@ -168,7 +175,7 @@ section>.rightTop .admin_img2{
 section>.rightTop .rt_admin{
 	width:150px;
 	height:57px;
-	padding:13px 15px;
+	/* padding:13px 15px; */
 }
 section>.rightTop .rt_admin_n{
 	font-size: 13px;
