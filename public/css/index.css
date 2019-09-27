@@ -426,12 +426,19 @@ section .floor_1>.popula .ranking_block .ranking_chapter{
     background:url(https://static3w.kuaikanmanhua.com/static-kkfront-pc/image/categories_bg_antiquity.33364ef.jpg) left top / cover no-repeat;
 }
 /*消除四楼和五楼外边距溢出*/
+.floor_4>.f4,
 .floor_4:before,
 .floor_5:before{
     content:"";
     display: table;
 }
 /*四楼类别div*/
+.floor_4>.f4{
+    width:1184px;
+    height: auto ;
+    margin:0 auto;
+    padding-bottom:24px;
+}
 .floor_4 .f4_type{
     width:1184px;
     height:42px;
@@ -476,7 +483,7 @@ section .floor_1>.popula .ranking_block .ranking_chapter{
 }
 /*四楼类别内容*/
 .floor_4 .f4_text{
-    width:1184px;
+    width:auto;
     height:303px;
     padding-top:20px;
     margin:0 auto;
