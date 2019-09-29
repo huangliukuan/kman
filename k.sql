@@ -85,7 +85,7 @@ INSERT INTO ct_cartoon_theme values (5,"大女生");
 INSERT INTO ct_cartoon_theme values (6,"治愈");
 INSERT INTO ct_cartoon_theme values (7,"动作");
 INSERT INTO ct_cartoon_theme values (8,"格斗");
-INSERT INTO ct_cartoon_theme values (9,"唯美");
+INSERT INTO ct_cartoon_theme values (9,"冒险");
 INSERT INTO ct_cartoon_theme values (10,"日漫");
 INSERT INTO ct_cartoon_theme values (11,"韩漫");
 INSERT INTO ct_cartoon_theme values (12,"穿越");
@@ -116,8 +116,10 @@ INSERT INTO ct_cartoon values(null,"斗破苍穹","知音漫客","image/cartoon/
 INSERT INTO ct_cartoon values(null,"一人之下","动漫堂","image/cartoon/yirenzhixia.jpg","大学生张楚岚清明回乡，遭遇神秘少女冯宝宝。素未谋面的冯宝宝却对张楚岚异常熟悉，并将其带去自己打工的快递公司。为了帮冯宝宝寻找她的身世，也为了查清自己与爷爷身上的秘密，张楚岚的生活被彻底颠覆，与冯宝宝一同踏上异人之旅。",183089000000,1000000,0,7);
 INSERT INTO ct_cartoon values(null,"蛊真人","燃绘文化","image/cartoon/guzhenren.jpg","本漫画经腾讯动漫授权改编自起点中文网文学作品《蛊真人》，原作者：蛊真人。人是万物之灵，蛊是天地真精。在一个养蛊、炼蛊、用蛊的奇特世界中，一个穿越者不断重生，矢志永生的励志故事。雄山漫道真如铁，如今迈步从头越。险就一身乾坤精，我心依旧望苍天！",2089000000,360000,0,2);
 INSERT INTO ct_cartoon values(null,"苍白王座","DAZUI","image/cartoon/cangbaiwangzuo.jpg","少年沐白失手杀人，从此进入杀手的世界，一张黑色的卡片出现在家门口，苍白王座，谁能得到这件杀手之王——夜X留下的最终武器、成就最强杀手？杀道，遵循的是杀戮之路，亦是自我之路。",1409000000,540000,0,16);
-INSERT INTO ct_cartoon values(null,"苍白王座","DAZUI","image/cartoon/cangbaiwangzuo.jpg","少年沐白失手杀人，从此进入杀手的世界，一张黑色的卡片出现在家门口，苍白王座，谁能得到这件杀手之王——夜X留下的最终武器、成就最强杀手？杀道，遵循的是杀戮之路，亦是自我之路。",1409000000,540000,0,16);
-
+INSERT INTO ct_cartoon values(null,"海贼王","尾田荣一郎","image/cartoon/haizeiwang.jpg","作品连载于周刊杂志《周刊少年JUMP》，与日本同步更新，每周周一更新。 [简介]有一个梦想成为海盗的少年叫路飞，他因误食“恶魔果实”而成为了橡皮人，在获得超人能力的同时付出了一辈子无法游泳的代价。十年后，路飞为实现与因救他而断臂的杰克斯的约定而出海，开始了以成为海盗王为目标的伟大的冒险旅程！",18509000000,540000,0,9);
+INSERT INTO ct_cartoon values(null,"百炼成神","燃哉工作室","image/cartoon/bailianchengshen.jpg","【每周三、五、六更新】现在身为卑微家奴的罗征，本身家中大少爷，因家族败落，妹妹被强大势力囚禁，无奈只得听命于人。可是天无绝人之路，父亲留给他的古书中竟然暗藏炼器神法，可将人炼制成器！而隐藏在这背后的神秘力量到底是什么？这是一场与命运的较量。",9309000000,630000,0,9);
+INSERT INTO ct_cartoon values(null,"重启未来","木由子","image/cartoon/chongqiweilai.jpg","毫无征兆之间,末世来临。 这是一个毁灭的时代,也是一个新生的时代。 这是一个绝望的时代,也是一个希冀的时代。 这是一个漆黑的时代,也是一个黎明的时代。 身兼天使与恶魔的力量,拯救或是陷入深渊?只在我的一念之间",8509000000,490000,0,16);
+INSERT INTO ct_cartoon values(null,"戒魔人","张三疯","image/cartoon/jiemoren.jpg","大一新生周小安偶然戴上了蛇神女娲的戒指，一个人类历史上的惊天秘密随即揭开……每周二、四、六更新，Q群: 425311792",6009000000,3=0000,0,16);
 
 
 /****漫画章节****/
