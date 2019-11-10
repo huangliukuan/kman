@@ -11,10 +11,13 @@ a{
 	font:14px 宋体;
 	line-height:32px;
 }
-header{
+.header{
 	width:100%;
 	height:64px;
-	background:#000;
+	background:-webkit-linear-gradient(top,#282828,#000);   
+	background:-moz-linear-gradient(top,#282828,#000);   
+	background:-ms-linear-gradient(top,#282828,#000);   
+	background:-o-linear-gradient(top,#282828,#000);
 }
 .hbody{
 	width:1184px;height:64px;
@@ -41,10 +44,13 @@ header{
 	margin:16px 0;
 	padding-left:20px;
 }
-.hbody .isearch{
-	position:relative;
-	top:5px;
-	left:-35px;
+.hbody .sc{
+	position: relative;
+}
+.hbody .sc .isearch{
+	position: absolute;
+	top:23px;
+	left:220px;
 }
 .hbody>.user{
 	width:115px;height:32px;
@@ -61,7 +67,7 @@ header{
 .footer{
   width: 100%;
   min-width: 1184px;
-  height:500px;
+  height:300px;
   background:-webkit-linear-gradient(top,#282828,#000);   
   background:-moz-linear-gradient(top,#282828,#000);   
   background:-ms-linear-gradient(top,#282828,#000);   
@@ -71,10 +77,15 @@ header{
 	width:1184px;
 	margin:0 auto;
 }
+.fbody>.fli::before{
+	display: table;
+	content: "";
+}
 .fbody>.fli{
-	width:600px;height:100px;
+	width:600px;
+	height:100px;
 	margin:20px auto;
-	padding:20px;
+
 }
 .fbody>.fli li{
 	width:120px;

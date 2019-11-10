@@ -2,6 +2,10 @@
 body{
 	background-color:#ccc;
 }
+section:before{
+	display: table;
+	content: "";
+}
 section{
 	width:1184px;
 	height:625px;
@@ -54,3 +58,4 @@ section>.sbody button{
 	border-radius:5px;
 	cursor:pointer;
 }
+

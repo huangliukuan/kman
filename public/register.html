@@ -5,9 +5,14 @@
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" href="css/login.css">
 		<script type="text/javascript" src="ajax/register.js"></script>
+		<script src="js/vue.js"></script>
+		<script src="header.js"></script>
+		<script src="footer.js"></script>
+		<link rel="stylesheet" href="css/style.css">
 	</head>
-	<body>
-		<iframe src="./header.html" frameborder="0" scrolling="no" width="100%" height="64px"></iframe>
+	<body >
+	<div id="app">
+		<Myheader></Myheader>
 		<section>
 			<table></table>
 			<div class="sbody srbody">
@@ -20,6 +25,15 @@
 				<p>已有账号<a href="login.html" class="ta">立即登录</a></p>
 			</div>
 		</section>
-		<iframe src="./footer.html" frameborder="0" scrolling="no" width="100%" height="300px"></iframe>
+		<Myfooter></Myfooter>
+	</div>
+		<script>
+		var vm=new Vue({
+  			el:"#app",
+ 		 data:{
+    
+  		}
+		})
+		</script>
 	</body>
 </html>

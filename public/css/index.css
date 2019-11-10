@@ -26,44 +26,6 @@ a:hover{text-decoration: none;}
 }
 
 
-header{
-    width:100%;height:64px;
-    min-width: 1184px;
-    background:#000;
-}
-header>.hbody{
-    width:1184px;height:64px;
-    margin:0 auto;
-}
-header>.hbody a{
-    color:#aaa;
-    font-size:14px;
-}
-header>.hbody>.logo img{
-    width:64px;height:64px;
-}
-header>.hbody>.direc{
-    width:648px;height:32px;
-    margin:16px 0;
-    padding-left:45px;
-}
-header>.hbody>.search{
-    width:252px;
-    height:64px;
-    margin-left:50px;
-}
-header>.hbody>.search .form-control{
-    margin:14px 0;
-}
-header>.hbody .breadcrumb{
-    background-color: #000;
-    float:right;
-    margin:8px 0;
-}
-header>.hbody .breadcrumb-item + .breadcrumb-item::before{
-    content:"|";
-}
-
 /* 清理高度坍塌 */
 section .carCont>.ulImg:after,
 section .carCont>.ulImg>.liImg:after{
@@ -621,7 +583,6 @@ section .floor_1>.popula .ranking_block .ranking_chapter{
 .floor_5 .f5_text .f5_cart .f5_rankid{
     display: inline-block;
     width:66px;
-    height:22px;
     background-color:rgb(255, 216, 6);
     border-radius:5px;
     font-size:16px;
@@ -645,47 +606,3 @@ section .floor_1>.popula .ranking_block .ranking_chapter{
 .floor_5 .f5_text .f5_cart p:last-child{
     opacity: .8;
 }
-/* 脚部 */
-footer{
-    width: 100%;
-    min-width: 1184px;
-    height:360px;
-    background:-webkit-linear-gradient(top,#282828,#000);
-    background:-moz-linear-gradient(top,#282828,#000);
-    background:-ms-linear-gradient(top,#282828,#000);
-    background:-o-linear-gradient(top,#282828,#000);
-}
-footer:before{
-    content:"";
-    display:table;
-}
-.fbody{
-    width:1184px;
-    margin:0 auto;
-}
-.fbody>.fli{
-    width:700px;
-    height:160px;
-    margin:18px auto 24px;
-    padding:20px;
-}
-.fbody>.fli>ul{
-    list-style:none;
-
-}
-.fbody>.fli li{
-    float: left;
-    width:120px;
-    height:50px;
-}
-.fbody>.fli a{
-    font-size:24px;
-    color:#aaa;
-    line-height:50px;
-}
-.fbody>.fcopy p{
-    text-align:center;
-    color:#aaa;
-}
-
-

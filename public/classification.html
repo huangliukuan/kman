@@ -4,14 +4,14 @@
 		<title></title>
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" href="css/classification.css">
-		<link rel="stylesheet" href="css/style.css">
 		<script src="js/vue.js"></script>
-		<script src="js/MyHeader.js"></script>
+		<script src="header.js"></script>
+		<script src="footer.js"></script>
+		<link rel="stylesheet" href="css/style.css">
 	</head>
-	<body>
-		<header id="app">
-			<my-header></my-header>
-		</header>
+	<body >
+	<div id="app">
+		<Myheader></Myheader>
 		<section>
 			<div class="theme">
 				<div class="yix">
@@ -271,15 +271,15 @@
 					<a href="#">下一页</a>
 			</div>	
 		</section>
-		<iframe src="./footer.html" frameborder="0" scrolling="no" width="100%" height="300px"></iframe>
+		<Myfooter></Myfooter>
+	</div>
 		<script>
-		Vue.component("my-header",MyHeader)
-		new Vue({
-			el:'#app',
-			data:{
-
-			}
-		}) 
+		var vm=new Vue({
+  			el:"#app",
+ 		 data:{
+    
+  		}
+		})
 		</script>
 	</body>
 </html>

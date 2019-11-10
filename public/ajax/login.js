@@ -11,7 +11,6 @@ function userLogin(){
 		pro.innerHTML="密码为空";
 		return;
 	}
-	console.log(111);
 	//创建异步对象
 	var xhr=new XMLHttpRequest();
 	//创建监听,接收响应

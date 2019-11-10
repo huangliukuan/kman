@@ -5,13 +5,15 @@
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" href="css/login.css">
 		<script type="text/javascript" src="ajax/login.js"></script>
+		<script src="js/vue.js"></script>
+		<script src="header.js"></script>
+		<script src="footer.js"></script>
+		<link rel="stylesheet" href="css/style.css">
 	</head>
-	<body>
-		<header>
-		<iframe src="./header.html" frameborder="0" scrolling="no" width="100%" height="62px"></iframe>
-		</header>
+	<body >
+	<div id="app">
+		<Myheader></Myheader>
 		<section>
-			<table></table>
 			<div class="sbody slbody">
 				<input  class="input" type="text" id="phone" placeholder="请输入手机号"><br>
 				<input class="input" type="password" id="upwd" placeholder="请输入密码"><br>
@@ -24,8 +26,15 @@
 			</div>
 			<div id="null"></div>
 		</section>
-		<footer>
-		<iframe src="./footer.html" frameborder="0" scrolling="no" width="100%" height="300px"></iframe>
-		</footer>
+		<Myfooter></Myfooter>
+	</div>
+		<script>
+		var vm=new Vue({
+  			el:"#app",
+			data:{
+
+			},
+		})
+		</script>
 	</body>
 </html>

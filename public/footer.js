@@ -1,12 +1,6 @@
-<!doctype html>
-<html>
-	<head>
-		<title></title>
-		<meta charset="utf-8"/>
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
-		<div class="footer">
+Vue.component("Myfooter",{
+	template:`
+	<div class="footer">
 			<div class="fbody">
 				<div class="fli">
 					<ul>
@@ -32,5 +26,11 @@
 				</div>
 			</div>
 		</div>
-	</body>
-	</html>
+`,
+	 data(){
+	   return {
+	   }
+	 },
+  })
+	
+
